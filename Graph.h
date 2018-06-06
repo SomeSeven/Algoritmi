@@ -11,11 +11,12 @@
 #include "Date.h"
 #include "GroupUser.h"
 
-using namespace std;
+using namespace std; //non usare namespace in headers
 
 class Graph {
 public:
-    Graph() ;
+
+    //Graph();
 
     template <typename T>                         //T indica il tipo di uno dei 3 possibili utenti.
     void setUser(T);                               //Aggiunge al vector l'oggetto passato come parametro.

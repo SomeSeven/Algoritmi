@@ -56,7 +56,7 @@ string CompanyUser::printInfo() const   /*Overloading funzione pure virtual dell
            +",Indirizzo sede operativa: "+getOperationaHeadquartersAdress()
            +",Data di fondazione: "+getBirth().str()
            +",Numero impiegati: "
-            +getEmployee()
-           +",Numero consociate: "
-            +getSubsidiaries();         //cancellato endl, DG.
+            //+ getEmployee()
+           +",Numero consociate: ";
+           // +getSubsidiaries();         //errori
 }

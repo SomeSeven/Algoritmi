@@ -3,7 +3,6 @@
 #ifndef GROUPUSER_H
 #define GROUPUSER_H
 
-
 #include "GeneralUser.h"
 
 class GroupUser: public GeneralUser {
