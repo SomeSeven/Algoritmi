@@ -2,12 +2,10 @@
 
 #include "CompanyUser.h"
 
-/*Costruttore*/
 CompanyUser::CompanyUser() {
     _number_of_employee=0;
     _number_of_subsidiaries=0;
 }
-
 /*Setters*/
 void CompanyUser::setTaxOffice(string adress)
 {
@@ -50,13 +48,16 @@ int CompanyUser::getSubsidiaries() const
 {
     return _number_of_subsidiaries;
 }
-string CompanyUser::printInfo() const   /*Overloading funzione pure virtual della classe generale*/
+
+/*
+string CompanyUser::printInfo() const   //Overloading funzione pure virtual della classe generale
 {
     return getID()+",Azienda,{Indirizzo sede fiscale: "+getTaxOfficeAdress()
            +",Indirizzo sede operativa: "+getOperationaHeadquartersAdress()
            +",Data di fondazione: "+getBirth().str()
            +",Numero impiegati: "
-            //+ getEmployee()
-           +",Numero consociate: ";
-           // +getSubsidiaries();         //errori
+           + getEmployee()
+           + ",Numero consociate: "
+           + getSubsidiaries();
 }
+*/
