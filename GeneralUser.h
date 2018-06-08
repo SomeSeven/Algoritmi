@@ -11,15 +11,14 @@ using namespace std;
 
 class GeneralUser {                          //Classe astratta, base per le diverse tipologie di utente.
 public:
-    GeneralUser();
+    GeneralUser();                            //Costruttore
 
-    virtual string printOnFile() = 0;        //Stampa tutte le info di un utente in ordine come formato per file,
-                                            //essendo pure virtual necessita l'overloading in tutte le classi derivate
-                                            //e non richiede una implementazione qui.
+    virtual string printOnFile() = 0;        //Stampa tutte le info di un utente in ordine come formato per file, pure virtual.
+
     virtual void printInfo() = 0;            //Stampa le informazioni dell'utente a schermo.
 
-    void setID(string);
-    void setBirth(string);                  //Setters.
+    void setID(const string&);
+    void setBirth(const string&);                  //Setters.
 
     string getID() const;                   //Getters.
     Date getBirth() const;
